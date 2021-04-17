@@ -18,7 +18,6 @@ def predobrabotka(file):
             text[i] = re.split(r"[\.,!\?\n\s]+", text[i]) #разделили сообщения на слова
             for j in range(len(text[i])):
                 text[i][j] = morph.parse(text[i][j])[0].normal_form
-    print(text)
 
 
 
